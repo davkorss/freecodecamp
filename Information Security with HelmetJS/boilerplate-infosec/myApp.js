@@ -145,7 +145,7 @@ app.use(helmet.dnsPrefetchControl())
 
 // Use helmet.noCache()
 
-
+app.use(helmet.noCache())
 
 /** 10) Content Security Policy - `helmet.contentSecurityPolicy()` */
 
