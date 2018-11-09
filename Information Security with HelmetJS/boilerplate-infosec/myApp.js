@@ -82,7 +82,7 @@ app.use(helmet.xssFilter())
 
 // Use `helmet.noSniff()`
 
-
+app.use(helmet.noSniff())
 
 /** 6) Prevent IE from opening *untrusted* HTML - `helmet.ieNoOpen()` */
 
