@@ -46,7 +46,7 @@ app.use(helmet.hidePoweredBy({ setTo: 'PHP 4.2.0' }))
 // We don't need our app to be framed, so you should use `helmet.frameguard()`
 // passing to it the configuration object `{action: 'deny'}`
 
- 
+app.use(helmet.frameguard({ action: 'deny' }))
 
 /** 4) Mitigate the risk of XSS - `helmet.xssFilter()` */
 
